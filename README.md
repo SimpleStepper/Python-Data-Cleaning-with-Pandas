@@ -61,5 +61,25 @@ df_cleaned[["Street_Address","State","Zip_Code"]] = df_cleaned['Address'].str.sp
 df_cleaned = df_cleaned.drop(columns = 'Address') # Drops original address
 df_cleaned
 ```
+## Filtering out Uncontactable Customers
+To make sure the final call list only includes valid and reachable customers, we applied two filters:
 
+1) Removed anyone without a phone number — if there’s no number, they can’t be contacted.
+2) Excluded customers who opted out — anyone marked as "Do Not Contact" was removed from the list.
+   
+After filtering, the list was reset and cleaned up, making it ready for export to Excel so a customer service rep or sales team can use it without any issues.
+
+<img width="1001" height="385" alt="image" src="https://github.com/user-attachments/assets/8e01d998-fefc-4564-b661-a41420d09856" />
+
+The code for this process is: 
+```python
+# Filters out people on "Do_Not_Contact" list and removes people will blank phone numbers
+df_cleaned_filtered = df_cleaned[
+    (df_cleaned['Phone_Number'] != "")  &
+    (df_cleaned['Do_Not_Contact'] != "Yes")
+]
+df_cleaned_filtered = df_cleaned_filtered.reset_index(drop=True) # resets index for the filtered dataframe
+df_cleaned_filtered
+#df_cleaned_filtered.to_excel(r"Customer Call List Cleaned.xlsx") # exports to a excel file for representative
+```
 
