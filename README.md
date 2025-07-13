@@ -54,7 +54,7 @@ To improve this, we separate the address into three parts:
 
 <img width="724" height="153" alt="image" src="https://github.com/user-attachments/assets/39dadd9e-a17b-4028-b718-1f236f5a8587" />
 
-This makes it much easier to sort customers by location or group customers by state. The technical code for this task was: 
+This makes it much easier to sort customers by location. The technical code for this task was: 
 ```python
 # Changes Address into Street_Address, State, Zip_Code
 df_cleaned[["Street_Address","State","Zip_Code"]] = df_cleaned['Address'].str.split(',', n=2, expand=True) # Splits address into Street_Address, State and Zip_Code
