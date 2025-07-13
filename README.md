@@ -82,4 +82,5 @@ df_cleaned_filtered = df_cleaned_filtered.reset_index(drop=True) # resets index 
 df_cleaned_filtered
 #df_cleaned_filtered.to_excel(r"Customer Call List Cleaned.xlsx") # exports to a excel file for representative
 ```
-
+---
+Overall this project was a great experience working with real world messy data and honing in professional data cleaning skills. 
