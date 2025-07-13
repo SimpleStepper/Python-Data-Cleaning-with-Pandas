@@ -19,7 +19,7 @@ The code for this project with notes can be found here:
 ## Phone Number Reformatting
 <img width="421" height="251" alt="image" src="https://github.com/user-attachments/assets/df4e6ead-d323-44b1-b285-81c64b377cbb" />
 
-This task was the trickiest part in this project and was more challenging than initially planned - however using Regex made the process more simple and a great skill to pick up. I approached the problem as follows. 
+This task was the trickiest part in this project and was more challenging than initially planned - however using Regex made the process more simple and a great skill to pick up. I approached the problem as follows:
 
 ```python
 # Clean phone numbers to match 111-111-1111 formatting
@@ -34,5 +34,5 @@ For a non-technical description of the process:
 1) Removed any non-numeric characters (like dashes, spaces, or brackets) so we were left with just digits.
 2) Handled any missing numbers by treating them as blanks.
 3) Reformatted the numbers to a clean, consistent layout: 123-456-7890.
-4) 
+
 This process makes the phone numbers reliable and ready for use in things like customer calls, mail merges, or importing into CRM tools.
