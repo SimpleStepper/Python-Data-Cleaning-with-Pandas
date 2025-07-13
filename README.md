@@ -6,7 +6,7 @@ This project focuses on cleaning and standardizing a customer call list dataset 
 The jupyter notebook with code for this project can be found here: 
 
 ---
-# task performed
+# Task performed
 1) Imported and inspected raw Excel data
 2) Removed duplicate records and unnecessary columns
 3) Cleaned up name fields (e.g., stripping symbols from Last_Name)
