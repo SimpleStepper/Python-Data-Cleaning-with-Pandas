@@ -44,8 +44,7 @@ The original address data was stored as a single long string like:
 ```
 This format made it difficult to sort, filter, or analyze specific parts of the address.
 
-To improve this, we:
- - Separated the address into three parts:
+To improve this, we separate the address into three parts:
 
 - Street_Address (e.g., “123 Main Street”)
 
