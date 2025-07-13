@@ -3,7 +3,7 @@ This project focuses on cleaning and standardizing a customer call list dataset 
 
 <img width="1301" height="458" alt="image" src="https://github.com/user-attachments/assets/64465cc6-568d-4bf7-98b0-8efad5ad366f" />
 
-The code for this project with notes can be found here: 
+The jupyter notebook with code for this project can be found here: 
 
 ---
 # task performed
@@ -36,3 +36,29 @@ For a non-technical description of the process:
 3) Reformatted the numbers to a clean, consistent layout: 123-456-7890.
 
 This process makes the phone numbers reliable and ready for use in things like customer calls, mail merges, or importing into CRM tools.
+
+## Address Field Extraction
+The original address data was stored as a single long string like:
+```python
+"123 Main Street, NY, 10001"
+```
+This format made it difficult to sort, filter, or analyze specific parts of the address.
+
+To improve this, we:
+ - Separated the address into three parts:
+
+- Street_Address (e.g., “123 Main Street”)
+
+- State (e.g., “NY”)
+
+- Zip_Code (e.g., “10001”)
+  
+This makes it much easier to sort customers by location or group customers by state. The technical code for this task was: 
+```python
+# Changes Address into Street_Address, State, Zip_Code
+df_cleaned[["Street_Address","State","Zip_Code"]] = df_cleaned['Address'].str.split(',', n=2, expand=True) # Splits address into Street_Address, State and Zip_Code
+df_cleaned = df_cleaned.drop(columns = 'Address') # Drops original address
+df_cleaned
+```
+
+
