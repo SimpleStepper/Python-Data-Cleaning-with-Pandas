@@ -19,6 +19,7 @@ The jupyter notebook with code for this project can be found here:
 ## Phone Number Reformatting
 <img width="421" height="251" alt="image" src="https://github.com/user-attachments/assets/df4e6ead-d323-44b1-b285-81c64b377cbb" />
 
+
 This task was the trickiest part in this project and was more challenging than initially planned - however using Regex made the process more simple and a great skill to pick up. I approached the problem as follows:
 
 ```python
