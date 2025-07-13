@@ -17,7 +17,7 @@ The code for this project with notes can be found here:
 --- 
 # Key Data Cleaning Highlights
 ## Phone Number Reformatting
-<img width="450" height="613" alt="image" src="https://github.com/user-attachments/assets/22d1e0d4-f399-4fd0-a18d-85dac9fc6b2c" />
+<img width="421" height="251" alt="image" src="https://github.com/user-attachments/assets/df4e6ead-d323-44b1-b285-81c64b377cbb" />
 
 This task was the trickiest part in this project and was more challenging than initially planned - however using Regex made the process more simple and a great skill to pick up. I approached the problem as follows. 
 
